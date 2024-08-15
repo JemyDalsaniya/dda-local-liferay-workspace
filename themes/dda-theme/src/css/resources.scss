@@ -1,0 +1,248 @@
+@import 'variable.scss';
+
+.resource-tabs
+{
+    .navbar-nav
+    {
+        display: flex;
+        justify-content: space-around;
+        padding: 0px 40px;
+        width: 100%;
+        .nav-link{
+
+            font-size: $fonts-size-md;
+            color: $black;
+            font-weight: $font-weight-bolder;
+            line-height: 32px;
+           &.active
+           {   
+              color: #49495C;
+               &:after
+               {
+                    background-color: #49495C !important;
+               }
+           } 
+        }
+    }
+    .tab-panel
+    {
+        padding: 60px 40px;
+        .search-facet
+        {
+            color: $btn-bg;
+            font-size: $fonts-size-md;
+            
+        }
+        .search-bar
+        {
+            .panel-body
+            {
+                padding-left: 0px;
+                .search-bar-keywords-input
+                {
+                    max-width: 400px;
+                    border: 1px solid #d7d7d7;
+                    padding: 14px 20px !important;
+                    color: $black;
+                    font-size: $fonts-extra-small;
+                    background-color: transparent;
+                }
+            }
+        }
+     
+       
+        .lfr-layout-structure-item-com-liferay-portal-search-web-internal-sort-portlet-sortportlet
+        {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 50px;
+            .control-label
+            {
+                color: $black;
+            }
+            .input-select-wrapper
+            {
+                display: flex;
+                align-items: center;
+                margin-bottom: 0px;
+                .form-control
+                {
+                    color: $black;
+                    font-size: $fonts-size-sm;
+                    line-height: 20px;
+                    font-weight: 400;
+                    width: auto;
+                    margin-left: 10px;
+                    background-color: transparent;
+                }
+            }
+        }
+        .doc-card-container
+        {
+            display: flex;
+            margin: 0px -12px;
+            flex-wrap: wrap;
+            .doc-card
+            {
+                
+                max-width: 48.5%;
+                width: 100%;
+                &:nth-child(odd)
+                {
+                    margin-right: 24px;
+                }
+                .doc-icons-main
+                {
+                    display: flex;
+                    justify-content: space-between;
+                    .doc-icons
+                    {   
+                        display: flex;
+                        .doc-download-link
+                        {
+                            position: relative;
+                            right: 0px;
+                            top: 0px;
+                            margin-left: 20px;
+                            color:$btn-bg;
+                            .lexicon-icon
+                            {
+                                height: 20px;
+                                width: 20px;
+                            }
+                        }
+                        .doc-view-link
+                        {
+                            color: $btn-bg;
+                            .lexicon-icon
+                            {
+                                height: 20px;
+                                width: 20px;
+                            }
+                        }
+                    }
+                }
+                .doc-category
+                {
+                    border: 1px solid $btn-bg;
+                    color: $btn-bg;
+                    font-size: 12px;
+                    font-weight: $font-weight-bolder;
+                    padding: 5px;
+                    border-radius: 30px;
+                    text-align: center;
+                }
+                .doc-file-info{
+                    justify-content: flex-end;
+                    .doc-file-size
+                    {
+                        font-weight: $font-weight-bolder;
+                    }
+                }
+                h3{
+                    font-size: $fonts-size-md;
+                    color: $black;
+                    font-weight: $font-weight-bold;
+                    margin: 24px 0px 5px;
+                    text-transform: capitalize;
+                }
+            }
+        }
+      
+        .component-html{
+            h2{
+                color: $black;
+                font-weight: $font-weight-bolder;
+                margin-bottom: 20px;
+            }
+        }
+        .card-page
+        {
+            .card-page-item
+            {
+                flex-basis: 33.33%;
+                max-width: 33.33%;
+              .card{
+                    border: none;
+                    box-shadow: none;
+                    position: relative;
+                    .aspect-ratio
+                    {
+                        border: none;
+                        position: relative;
+
+                        .lfr-portal-tooltip
+                        {
+                            position: absolute;
+                            top: 10px;
+                            right: 15px;
+                            background-color: $white;
+                           
+                            a{
+                                color: $btn-bg;
+                            }
+                        }
+                       
+                    }
+                    .card-body
+                    {
+                        .card-title
+                        {
+                            color: #363940;
+                            font-size: $fonts-size-md;
+                            font-weight: $font-weight-bold;
+                            line-height: 30px;
+                            margin-bottom: 6px;
+                        }
+                        .card-subtitle
+                        {
+                            color: $black;
+                            font-size: $fonts-size-md;
+                            font-weight: $font-weight-bolder;
+                            line-height: 24px;
+                        }
+                       
+                    }
+              }
+            }
+        }
+        .search-total-label
+        {
+            display: none;
+        }
+    }
+
+}
+
+.filter-options
+{
+    .custom-radio
+    {
+        .custom-control-label
+        {
+            color: $black;
+            font-weight: $font-weight-bolder;
+            &::before
+            {
+                border: 1px solid $black;
+            }
+        }
+        .custom-control-input:checked ~ .custom-control-label::before {
+            background-color: transparent;
+            border-color: #000;
+            color: #fff;
+          }
+        .custom-control-input:checked ~ .custom-control-label::after
+        {
+            background-color: #010101;
+            height: 8px;
+            width: 8px;
+            position: absolute;
+            border-radius: 50%;
+            background-image: none;
+            left: 4px;
+            top: 6px;
+        }
+    }
+}

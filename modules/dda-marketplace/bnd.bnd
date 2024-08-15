@@ -2,3 +2,5 @@ Bundle-Name: dda-marketplace
 Bundle-SymbolicName: dda.marketplace
 Bundle-Version: 1.0.0
 Export-Package: dda.marketplace.constants
+
+Import-Package: *; version="0";resolution:=optional

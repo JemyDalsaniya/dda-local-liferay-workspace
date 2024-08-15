@@ -1,0 +1,300 @@
+@import 'variable.scss';
+
+.themes-grid
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 0px 0px;
+    margin: 0px -12px;
+    .theme-card
+    {
+        max-width: 33.33%;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        padding: 0px 12px;
+        .theme-icon
+        {
+            img
+            {
+                width: 100%;
+            }
+        }
+        .theme-title
+        {
+            color: #363940;
+            font-weight: $font-weight-bold;
+            font-size: $fonts-size-md;
+            line-height: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        p{
+            color: #5f5f5f;
+            font-size: $fonts-size-sm;
+            line-height: 24px;
+        }
+        .theme-link{
+            color:$btn-bg;
+            font-size: $fonts-size-sm;
+            line-height: 20px;
+            text-decoration: none;
+            font-weight: $font-weight-bold;
+        }
+    }
+}
+
+.tabs
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 40px;
+    width: 100%;
+    position: relative;
+    .tab-button
+    {
+        font-size: $fonts-size-md;
+        color: $black;
+        font-weight: $font-weight-bolder;
+        line-height: 32px;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        padding-bottom: 10px;
+        position: relative;
+        &.active,&:hover
+        {
+            color: #49495C;
+               &:after
+               {
+                    background: #49495C !important;
+                    content: '';
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0;
+                    width: 100%;
+                    height: 5px;
+               }
+        }
+    }
+&::after
+{
+    content: "";
+    background-color: #BBBACA;
+    width: 105%;
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: -40px;
+}
+}
+.theme-tabs-main
+{
+    .tab-content
+    {
+        padding: 50px 0px;
+        .overview-container
+        {
+            h2{
+                font-size: 26px;
+                color: $black;
+                line-height: 24px;
+                margin-bottom: 0px;
+            }
+            .figures-container
+            {
+                
+                display: flex;
+                flex-wrap: wrap;
+                margin: 40px -10px;
+                .figure-card-main
+                {
+                    width: 25%;
+                    padding: 0px 10px;
+                    display: flex;
+                    .figure-card
+                    {
+                        display: flex;
+                        height: 100%;
+                        background: #F9FAFB;
+                        padding: 15px;
+                        width: 100%;
+                        flex-direction: column;
+                        text-align: center;
+                        h3{
+                            color: #177DB7;
+                            font-size: 60px;
+                            line-height: 72px;
+                            font-weight: $font-weight-bold;
+                            margin-bottom: 15px;
+                        }
+                        .figure-title
+                        {
+                            color:$card-tital;
+                            font-size: 18px;
+                            font-weight: $font-weight-bold;
+                        }
+                        .figure-description
+                        {
+                            color: #475467;
+                            font-size: $fonts-size-sm;
+                            line-height: 24px;
+                            text-align: center;
+                        }
+
+                    }
+                }
+               
+
+            }
+            .chart-container
+            {
+                display: flex;
+                margin: 40px -10px 0px -10px;
+                .chart{
+                    width: 50%;
+                    padding: 0px 10px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .case-study-container
+        {
+            .case-study-grid
+            {
+                padding: 0px;
+                .case-study-card
+                {
+                    .case-study-icon
+                    {
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    h3{
+                        margin: 15px 0px;
+                    }
+                }
+            }
+        }
+        .publication-container
+        {
+            .publication-inner
+            {
+                display: flex;
+                margin: 0px -15px;
+             
+                .filter-box
+                {
+                    width: 25%;
+                    padding: 0px 15px;
+                    ul{
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        margin: 0px -8px;
+                        li{
+                            padding: 0px 8px;
+                            a{
+                                color: $black;
+                                font-size: $fonts-size-sm;
+                                line-height: 32px;
+                                text-decoration: none;
+                                &:hover
+                                {
+                                    color: $btn-bg;
+                                }
+                            }
+                        }
+                    }
+                }
+                .publications-cards-container
+                {
+                    width: 75%;
+                    padding: 0px 15px;
+                    .file-count
+                    {
+                        color: $black;
+                        font-size: 22px;    
+                        font-weight: $font-weight-bolder;
+                        margin-bottom: 20px;
+                    }
+                    .publications-card-main
+                    {
+                        display: flex;
+                        margin: 0px -15px;
+                        flex-wrap: wrap;
+                        .publications-card
+                        {
+                            width: 50%;
+                            padding: 0px 15px;
+                            .doc-card
+                            {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.search-filter
+{
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-between;
+    .form-control
+    {
+        border: 1px solid #00000033;
+        max-width: 360px;
+        border-radius: 25px;
+        padding: 14px 20px;
+        color: $black;
+        font-size: $fonts-small;
+        background: transparent;
+        outline: none;
+        box-shadow: none;
+    }
+    .select-menu
+    {
+        display: flex;
+        align-items: center;
+        position: relative;
+        
+        label
+        {
+            font-size: $fonts-size-sm;
+            color: $black;
+            line-height: 20px;
+            font-weight: $font-weight-bolder;
+            width: 75px;
+            margin-bottom: 0px;
+        }
+        .custom-select{
+            background: transparent;
+            font-size: $fonts-size-sm;
+            color: $black;
+            padding: 0px;
+            border: none;
+            box-shadow: none;
+            width: 75px;
+          
+            
+        }
+        &::before{
+            content: "\f107";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            right: 0px;
+            position: absolute;
+        }
+    }
+}

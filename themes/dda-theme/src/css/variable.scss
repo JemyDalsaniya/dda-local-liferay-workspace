@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* colors */
+$white:#fff;
+$nav-menu:#1a1a1a;
+$nav-menu-active:#43286c;
+$black:#000000;
+$purple:#7E5EA8;
+$light-grey:#2a2a2a;
+$title-bg:#f6f7fa;
+$card-tital:#101b2b;
+$card-text:#5b5b5b;
+$cta-bg:#F0F3FA;
+$btn-bg:#0075B0;
+
+
+
+//fonts
+$font-family:"Inter", sans-serif;
+
+
+
+
+
+
+// Border Radius
+$border-radius-base: 5px;
+$border-radius: $border-radius-base;
+$border-radius-sm: $border-radius-base + $border-radius;
+$border-radius-lg: $border-radius-base + $border-radius-sm;
+$border-radius-xl: $border-radius-base + $border-radius-lg;
+$border-radius-2xl: $border-radius-base + $border-radius-xl;
+$border-radius-3xl: $border-radius-sm + $border-radius-xl;
+$border-radius-pill: 50rem;
+
+
+
+
+// Font Weight
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+
+
+
+// Font Size
+$fonts-extra-small:13px;
+$fonts-small:13px;
+$fonts-size: 14px;
+$fonts-size-xs: 12px;
+$fonts-size-sm: 16px;
+$fonts-size-md: 20px;
+$fonts-size-xl: 45px;
+$fonts-size-xll: 60px;
+$custom-title: 16px;
+$h1-font-size:36px;
+$h3-font-size: 24px;
+$h4-font-size: 18px;
+$h5-font-size: $fonts-size-sm;
