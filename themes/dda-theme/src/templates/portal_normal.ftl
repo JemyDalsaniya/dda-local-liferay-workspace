@@ -7,7 +7,9 @@
 <head>
 	<title>${html_title}</title>
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<#--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">-->
+<#--<link rel="stylesheet" href="${themeDisplay.getPathThemeCss()}/custom_properties/all.min.css">-->
+<link rel="stylesheet" href="${themeDisplay.getPathThemeCss()}/custom_properties/font-awesome.min.css">
 	<@liferay_util["include"] page=top_head_include />
 </head>
 
@@ -42,9 +44,14 @@
 
 <@liferay_util["include"] page=bottom_include />
 
-<script type="text/javascript" src=${themeDisplay.getPathThemeJavaScript()}/bootstrap.min.js></script>
-<script type="text/javascript" src=${themeDisplay.getPathThemeJavaScript()}/bootstrap.bundle.min.js></script>
-<script type="text/javascript" src=${themeDisplay.getPathThemeJavaScript()}/jquery-3.3.1.slim.min.js></script>
+
+
+<#--<script type="text/javascript" src=${themeDisplay.getPathThemeJavaScript()}/jquery-3.3.1.slim.min.js></script>-->
+<#--<script type="text/javascript" src=${themeDisplay.getPathThemeJavaScript()}/popper.min.js></script>-->
+<#--<script type="text/javascript" src=${themeDisplay.getPathThemeJavaScript()}/bootstrap.min.js></script>-->
+<#--<script type="text/javascript" src=${themeDisplay.getPathThemeJavaScript()}/bootstrap.bundle.min.js></script>-->
+<script type="text/javascript" src=${themeDisplay.getPathThemeJavaScript()}/jszip.min.js></script>
+<script type="text/javascript" src=${themeDisplay.getPathThemeJavaScript()}/FileSaver.min.js></script>
 
 </body>
 
