@@ -1,0 +1,4 @@
+Bundle-Name: dda-user-profile
+Bundle-SymbolicName: dda.user.profile
+Bundle-Version: 1.0.0
+Export-Package: dda.user.profile.constants

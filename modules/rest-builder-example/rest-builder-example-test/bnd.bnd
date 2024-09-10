@@ -1,0 +1,5 @@
+Bundle-Name: rest-builder-example-test
+Bundle-SymbolicName: rest.builder.example.test
+Bundle-Version: 1.0.0
+-includeresource: rest.builder.example.client.jar=../rest-builder-example-client/build/libs/rest.builder.example.client-1.0.0.jar;lib:=true
+-provider-policy: ${replacestring;${range;[==,==]};.*,(.*)];$1}

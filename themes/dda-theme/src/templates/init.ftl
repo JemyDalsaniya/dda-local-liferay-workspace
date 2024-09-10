@@ -31,7 +31,7 @@
 	full_templates_path = fullTemplatesPath
 
 	css_main_file = htmlUtil.escape(portalUtil.getStaticResourceURL(request, "${css_folder}/main.css"))
-	js_main_file = htmlUtil.escape(portalUtil.getStaticResourceURL(request, "${javascript_folder}/main.js"))
+	js_main_file = htmlUtil.escape(portalUtil.getStaticResourceURL(request, "${javascript_folder}/*.js"))
 
 	company_id = company.getCompanyId()
 	company_name = htmlUtil.escape(company.getName())

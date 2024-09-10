@@ -41,7 +41,7 @@ a, a:hover{
 .common-head
 {
     background-color: $title-bg !important;
-    min-height: 440px;
+    min-height: 480px;
     padding-top: 7% !important;
     @media(max-width:767px)
     {
@@ -73,11 +73,29 @@ a, a:hover{
         margin-top: 20px;
         display: inline-block;
         width: auto;
+       
     }
-
+&.search-result{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .input-group{
+        width: 710px;
+        border-radius: 25px;
+        .search-bar-keywords-input{
+            border-radius: 25px 0px 0px 25px;
+            background-color: $white;
+            color: $black;
+            font-size: 14px;
+        }
+        .input-group-inset-item{
+            border-radius: 0px 25px 25px 0px;
+            background-color: $white;
+        }
+    }
 }
-.common-btn
-{
+}
+@mixin common-btn {
     background-color: $btn-bg;
     width: 100%;
     color: $white;
@@ -86,10 +104,27 @@ a, a:hover{
     margin-top: 15px;
     font-size: $fonts-size-sm;
     border: 1px solid $btn-bg;
-    &:hover
-    {
-        background-color:$white;
+
+    &:hover {
+        background-color: $white;
         color: $btn-bg;
+        border: 1px solid $btn-bg;
+    }
+}
+
+.common-btn{
+    @include common-btn;
+}
+
+.common-btn-reverse {
+    color: $btn-bg;
+    border: 1px solid $btn-bg;
+    padding: 10px 15px;
+    border-radius: $border-radius-sm;
+
+    &:hover {
+        background-color: $btn-bg;
+        color: $white;
     }
 }
 
@@ -99,9 +134,8 @@ a, a:hover{
     width: 100%;
     border: 1px solid #96959F;
     border-radius: $border-radius-lg;
-    padding: 28px 30px 20px;
+    padding: 15px 30px 20px;
     margin-bottom: 20px;
-    border:1px solid #96959F;
     h3{
         color: $black;
         font-size: $fonts-size-md;
@@ -132,6 +166,7 @@ a, a:hover{
             color: $black;
             font-size: $fonts-size-sm;
             line-height: 30px;
+            margin-bottom: 0px;
         }
         div{
             display: flex;
@@ -139,6 +174,8 @@ a, a:hover{
             img
             {
                 max-width: 22px;
+                height: auto;
+                width: auto;
             }
             .doc-file-size
             {
@@ -197,7 +234,7 @@ a, a:hover{
             color: $btn-bg;
             font-size: 12px;
             font-weight: $font-weight-bolder;
-            padding: 5px;
+            padding: 5px 8px;
             border-radius: 30px;
             text-align: center;
             margin-bottom: 0px;
@@ -280,5 +317,163 @@ a, a:hover{
     }
     }
 }
+.service-cards
+{
+    display: flex;
+    margin: 30px 0px 50px;
+    gap: 30px;
+    flex-wrap: wrap;
+    .service-card-main{
+        max-width: 25%;
+        width: 100%;
+        padding: 0px;
+        margin-top: 20px;
+        
 
+    }
+    .card{
+        background-color: #F9FAFB;
+        padding: 25px;
+        border-radius: 10px;
+        margin-bottom: 0px;
+        height: 100%;
+        .icon{
+            img{
+                max-width: 50px;
+            }
+            margin-bottom: 0px;
+        }
+        h3{
+            font-size: 18px;
+            color: #363940;
+            line-height: 22px;
+            font-weight: $font-weight-bold;
+            margin: 15px 0px;
+        }
+      
+        
+       
+    }
+}
+
+
+
+.custom-logout-class {
+    background-color: red;
+}
+.custom-login-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.breadcrumb-main{
+    position: absolute;
+    left: 50px;
+    top: 130px;
+    .breadcrumb{
+        .breadcrumb-item{
+            a{
+                color: #667085;
+                font-size: $fonts-size;
+            }
+
+           
+        &.active{
+            a{
+                color: #177DB7;
+            }
+            color: #177DB7;
+           
+        }
+        }
+    }
+}
+
+
+.categories{
+    margin-bottom: 15px;
+
+    .category{
+        color: #0075B0;
+        font-size: 14px;
+        border: 1px solid #0075B0;
+        padding: 5px 8px;
+        background-color: transparent;
+        margin:0px 10px 0px 0px;
+        border-radius: 25px;
+        min-width: 70px;
+        text-align: center;
+        &.business{
+            border: 1px solid #992541;
+            color: #992541;
+        }
+        &.government{
+            border: 1px solid #48A400;
+            color: #48A400;
+        }
+    }
+}
+.portlet-static
+{
+    .portlet{
+        margin-bottom: 0px;
+    }
+}
+
+.view-details{
+    color:$btn-bg;
+    font-size: 13px;
+    font-weight:$font-weight-bold;
+    line-height: 22px;
+    position: relative;
+    &::after
+    {
+        content: "\f061";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        right: -5px;
+        top: 2px;
+        position: relative;
+    }
+&:hover{
+    color:$btn-bg;
+}
+
+}
+
+.folder-group{
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0px;
+    h2{
+        border-bottom: 0px;
+        font-size: 20px;
+        color: $black;
+        font-weight: $font-weight-bold;
+        margin: 10px 0px 25px 0px;
+    }
+}
+
+
+
+
+body.main-login
+{
+    overflow: auto !important;
+}
 

@@ -1,0 +1,6 @@
+Bundle-Name: rest-builder-example-api
+Bundle-SymbolicName: rest.builder.example.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	rest.builder.example.dto.v1_0,\
+	rest.builder.example.resource.v1_0

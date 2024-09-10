@@ -29,8 +29,12 @@
         padding: 60px 40px;
         .search-facet
         {
-            color: $btn-bg;
-            font-size: $fonts-size-md;
+            color: $black;
+            font-size: $fonts-size-sm;
+            font-weight: $font-weight-bold;
+            span{
+                text-transform: capitalize;
+            }
             
         }
         .search-bar
@@ -56,7 +60,7 @@
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            margin-top: 50px;
+            margin:0px 0px 30px 0px;
             .control-label
             {
                 color: $black;
@@ -129,7 +133,7 @@
                     color: $btn-bg;
                     font-size: 12px;
                     font-weight: $font-weight-bolder;
-                    padding: 5px;
+                    padding: 5px 8px;
                     border-radius: 30px;
                     text-align: center;
                 }
@@ -167,6 +171,7 @@
                     border: none;
                     box-shadow: none;
                     position: relative;
+                    border: 1px solid #d7d7d7;
                     .aspect-ratio
                     {
                         border: none;
@@ -181,6 +186,9 @@
                            
                             a{
                                 color: $btn-bg;
+                                img{
+                                    max-width: 20px;
+                                }
                             }
                         }
                        

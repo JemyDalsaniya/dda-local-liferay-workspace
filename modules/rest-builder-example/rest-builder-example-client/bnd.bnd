@@ -1,0 +1,3 @@
+Bundle-Name: rest-builder-example-client
+Bundle-SymbolicName: rest.builder.example.client
+Bundle-Version: 1.0.0

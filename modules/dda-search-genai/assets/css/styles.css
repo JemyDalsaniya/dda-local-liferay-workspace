@@ -1,0 +1,70 @@
+.px-60 {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+.pt-20 {
+	padding-top: 20px;
+}
+
+.pt-30 {
+	padding-top: 30px;
+}
+
+.pb-55 {
+	padding-bottom: 55px;
+}
+
+.bg-gray1 {
+	background-color: #ededf0;
+}
+
+
+
+.pb-25 {
+	padding-bottom: 25px;
+}
+
+.mb-16 {
+	margin-bottom: 16px;
+}
+
+.bg-gray2 {
+	background-color: #cfcfd2;
+}
+
+.rounded-20 {
+	border-radius: 20px;
+}
+
+.h-250 {
+	height: 250px;
+}
+
+.font-18 {
+	font-size: 18px;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+.max-w-520 {
+	max-width: 520px;
+}
+
+.mr-16 {
+	margin-right: 16px;
+}
+
+.flex {
+	display: flex;
+}
+
+.items-center {
+	align-items: center;
+}
+
+.gap-10 {
+	gap: 10px;
+}

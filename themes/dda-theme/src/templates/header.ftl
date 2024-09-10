@@ -189,7 +189,5 @@
         alert('Read Speaker toggled (placeholder)');
     }
 </script>
-<#--    <script src="../js/bootstrap.min.js"></script>-->
-<#--    <script src="../js/jquery-3.3.1.slim.min.js"></script>-->
 </body>
 </html>

@@ -35,14 +35,20 @@ body{
         {
             all: unset;
             margin-top: 50px !important;
-            max-width: 300px !important;
             display: inherit;
             @media(max-width:767px){
                 max-width: 100% !important;
                 text-align: center;
             }
+            img{
+                padding: 10px;
+                margin-left: 20px;
+                background-color:$btn-bg;
+                border-radius: 50px;
+            }
             .card-body{
                 padding-bottom: 0px !important;
+                max-width: 300px;
                 h2{
                     color:$card-tital;
                     font-size: 24px;
@@ -60,11 +66,16 @@ body{
                     font-size: 18px;
                     line-height: 27px;
                     margin-bottom: 0px;
-                    margin-bottom: 0px;
                     
                 }
                 div{
                     margin-bottom: 0px !important;
+                }
+                pre{
+                    overflow: inherit;
+                }
+                a{
+                    display: none;
                 }
             }
         
@@ -113,7 +124,7 @@ body{
             {   
                 all: unset;
                 font-size: 18px;
-                font-weight: $card-text;
+                color: $card-text;
                 line-height: 27px;
                 @media(max-width:767px)
                 {
@@ -309,7 +320,7 @@ body{
     .nav-link
     {
         margin: 10px;
-        max-width: 23.9%;
+        max-width: 23.7%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -319,9 +330,22 @@ body{
         color: #1D242A;
         font-weight: $font-weight-bold;
         font-size: $fonts-size-md;
+        @media(max-width:1600px)
+        {
+            max-width: 23.5%;
+        }
+        @media(max-width:1300px)
+        {
+            max-width: 23.3%;
+        }
+        @media(max-width:1100px)
+        {
+            max-width: 23%;
+        }
         @media(max-width:767px)
         {
             font-size: $fonts-size-sm;
+            max-width: 100%;
         }
         img{
             max-width: 38px;
@@ -333,22 +357,44 @@ body{
            background-color: #E7F4FF;
            border: 2px solid #2196F3;
         }
-       
+    &:last-child{
+        margin-right: 0px;
+        @media(max-width:767px)
+        {
+            margin: 10px;
+        }
+    }
     }
 }
 .tab-content
 {
     padding: 0px 40px;
+    .slick-track
+    {
+     
+            .slide{
+           
+                img{
+                    max-width: 976px;
+                    width: 100%;
+                    margin: 0 auto;
+                }
+            }
+    }
     .slider{
         background-color: transparent;
-        .slide{
-            img{
-                width: 100%;
-            }
+        width: 100%;
+        min-height: 400px;
+        @media(max-width:991px){
+            min-height: auto;
         }
+
     }
+   
     .slick-dots
     {
+        position: relative;
+        margin: 20px 0px;
         li
         {
             height: 10px;
@@ -375,6 +421,15 @@ body{
         }    
         }
     }
+    .doc-card-container{
+        justify-content: center;
+        .doc-card{
+            max-width: 430px;
+            width: 100%;
+            position: relative;
+        }
+    }
+   
 }
     }
 }
@@ -453,4 +508,20 @@ body{
             }
         }
     }
+}
+
+
+html[dir=rtl]{
+    .visit-us{
+        text-align: right !important;
+        .component-button
+        {
+            text-align: right !important;
+        }
+    }
+}
+
+.component-card
+{
+    border: none;
 }

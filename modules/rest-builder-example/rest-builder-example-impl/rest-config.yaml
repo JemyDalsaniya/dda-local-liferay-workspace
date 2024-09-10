@@ -1,0 +1,9 @@
+apiDir: "../rest-builder-example-api/src/main/java"
+apiPackagePath: "rest.builder.example"
+application:
+    baseURI: "/rest-builder-example"
+    className: "RestBuilderExampleApplication"
+    name: "RestBuilderExample"
+author: "root321"
+clientDir: "../rest-builder-example-client/src/main/java"
+testDir: "../rest-builder-example-test/src/testIntegration/java"
